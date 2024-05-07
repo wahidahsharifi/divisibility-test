@@ -57,87 +57,28 @@ function math() {
    if (answer <= 1) {
       li.appendChild(
          document.createTextNode("number must be greater than one")
-      )
-   }else if (
-      answer % 2 != 0 &&
-      answer % 3 != 0 &&
-      answer % 4 != 0 &&
-      answer % 5 != 0 &&
-      answer % 6 != 0 &&
-      answer % 7 != 0 &&
-      answer % 8 != 0 &&
-      answer % 9 != 0 &&
-      answer % 10 != 0 &&
-      answer % 11 != 0 &&
-      answer % 12 != 0 &&
-      answer % 13 != 0 &&
-      answer % 14 != 0 &&
-      answer % 15 != 0 &&
-      answer % 17 != 0 &&
-      answer % 18 != 0 &&
-      answer % 19 != 0 &&
-      answer % 20 != 0
-   ) {
-      li.appendChild(
-         document.createTextNode(`${answer} is not divisible by 2-20 numbers`)
-      )
-   }else{
-      li.appendChild(document.createTextNode(`${answer} 🟰 `));
-      if (answer % 2 == 0) {
-         li.appendChild(document.createTextNode(`${2} `));
-      } else if (answer % 3 == 0) {
-         li.appendChild(document.createTextNode(`${3} `));
+      );
+   } else {
+      let isDivisible = true;
+      for (let i = 2; i <= 20; i++) {
+         if (answer % i == 0) {
+            isDivisible = false;
+            break;
+         }
       }
-      if (answer % 4 == 0) {
-         li.appendChild(document.createTextNode(`${4} `));
-      }
-      if (answer % 5 == 0) {
-         li.appendChild(document.createTextNode(`${5} `));
-      }
-      if (answer % 6 == 0) {
-         li.appendChild(document.createTextNode(`${6} `));
-      }
-      if (answer % 7 == 0) {
-         li.appendChild(document.createTextNode(`${7} `));
-      }
-      if (answer % 8 == 0) {
-         li.appendChild(document.createTextNode(`${8} `));
-      }
-      if (answer % 9 == 0) {
-         li.appendChild(document.createTextNode(`${9} `));
-      }
-      if (answer % 10 == 0) {
-         li.appendChild(document.createTextNode(`${10} `));
-      }
-      if (answer % 11 == 0) {
-         li.appendChild(document.createTextNode(`${11} `));
-      }
-      if (answer % 12 == 0) {
-         li.appendChild(document.createTextNode(`${12} `));
-      }
-      if (answer % 13 == 0) {
-         li.appendChild(document.createTextNode(`${13} `));
-      }
-      if (answer % 14 == 0) {
-         li.appendChild(document.createTextNode(`${14} `));
-      }
-      if (answer % 15 == 0) {
-         li.appendChild(document.createTextNode(`${15} `));
-      }
-      if (answer % 16 == 0) {
-         li.appendChild(document.createTextNode(`${16} `));
-      }
-      if (answer % 17 == 0) {
-         li.appendChild(document.createTextNode(`${17} `));
-      }
-      if (answer % 18 == 0) {
-         li.appendChild(document.createTextNode(`${18} `));
-      }
-      if (answer % 19 == 0) {
-         li.appendChild(document.createTextNode(`${19} `));
-      }
-      if (answer % 20 == 0) {
-         li.appendChild(document.createTextNode(`${20} `));
+      if (isDivisible) {
+         li.appendChild(
+            document.createTextNode(
+               `${answer} is not divisible by 2-20 numbers`
+            )
+         );
+      } else if (answer > 1) {
+         li.appendChild(document.createTextNode(`${answer} = `));
+         for (let i = 2; i <= 20; i++) {
+            if (answer % i == 0) {
+               li.appendChild(document.createTextNode(`${i} `));
+            }
+         }
       }
    }
 }
@@ -159,10 +100,12 @@ function manualMan() {
    const li = document.createElement("li");
    resultMan.appendChild(li);
    if (numberMan <= 1 || divisibleBy <= 1) {
-      li.appendChild(document.createTextNode(`the input number is not greater than one!`))
-   }else if (numberMan % divisibleBy == 0) {
-      li.appendChild(document.createTextNode(`YES`))
-   }else {
+      li.appendChild(
+         document.createTextNode(`the input number is not greater than one!`)
+      );
+   } else if (numberMan % divisibleBy == 0) {
+      li.appendChild(document.createTextNode(`YES`));
+   } else {
       li.appendChild(document.createTextNode(`NO`));
    }
 }
