@@ -54,8 +54,8 @@ header,
 #author {
    position: relative;
 }
-#author *{
-   transition: .1s ease-in;
+#author * {
+   transition: 0.1s ease-in;
 }
 #authorHead {
    &:hover {
@@ -175,7 +175,7 @@ header,
    text-decoration: none;
    font-size: 14px !important;
    color: #00f !important;
-   &:hover{
+   &:hover {
       text-decoration: underline 1px red;
    }
 }
@@ -245,7 +245,7 @@ header,
    border-radius: 10px;
    margin: 20px auto 5px auto;
 }
-.calc img{
+.calc img {
    height: 45px;
 }
 /* result */

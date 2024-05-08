@@ -7,32 +7,37 @@ const rootTheme = document.querySelector(":root");
 // selecting the button which will trigger the event
 const lightBtn = document.querySelector(".light");
 const darkBtn = document.querySelector(".dark");
-// change theme to light
+// Function to update theme properties
+const updateThemeProperties = (properties) => {
+   Object.keys(properties).forEach((key) => {
+      rootTheme.style.setProperty(key, properties[key]);
+   });
+};
+// Event listener for the light theme button
 lightBtn.addEventListener("click", () => {
-   // changing the color from #0b32e7 to #f44336
-   rootTheme.style.setProperty("--bg-color", "#fff");
-   rootTheme.style.setProperty("--text-color", "#000");
-   rootTheme.style.setProperty("--link-color", "#00f");
-   rootTheme.style.setProperty("--side-background", "#dddddd");
-   rootTheme.style.setProperty("--side-text", "#ffffff9e");
-   rootTheme.style.setProperty("--sub", "#f00");
-   // relImg.style.filter = "brightness(0%)";
-   for (var i = 0; i < relImg.length; i++) {
-      relImg[i].style.filter = "brightness(0%)";
-   }
+   const lightThemeProperties = {
+      "--bg-color": "#fff",
+      "--text-color": "#000",
+      "--link-color": "#00f",
+      "--side-background": "#dddddd",
+      "--side-text": "#ffffff9e",
+      "--sub": "#f00",
+   };
+   updateThemeProperties(lightThemeProperties);
+   relImg.forEach((img) => (img.style.filter = "brightness(0)"));
 });
-// change the theme to dark
+// Event listener for the dark theme button
 darkBtn.addEventListener("click", () => {
-   rootTheme.style.setProperty("--bg-color", "#000");
-   rootTheme.style.setProperty("--text-color", "#fff");
-   rootTheme.style.setProperty("--link-color", "#00f");
-   rootTheme.style.setProperty("--side-background", "#484848");
-   rootTheme.style.setProperty("--side-text", "#c4c4c463");
-   rootTheme.style.setProperty("--sub", "#ffd700");
-   // relImg.style.filter = "brightness(100%)";
-   for (var i = 0; i < relImg.length; i++) {
-      relImg[i].style.filter = "brightness(100%)";
-   }
+   const darkThemeProperties = {
+      "--bg-color": "#000",
+      "--text-color": "#fff",
+      "--link-color": "#00f",
+      "--side-background": "#484848",
+      "--side-text": "#c4c4c463",
+      "--sub": "#ffd700",
+   };
+   updateThemeProperties(darkThemeProperties);
+   relImg.forEach((img) => (img.style.filter = "brightness(100%)"));
 });
 /*
 	divisibility calculation
