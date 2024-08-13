@@ -10,26 +10,27 @@
       />
       <meta name="author" content="Wahid Sharifi" />
       <title>divisibility test</title>
+      <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
       <link rel="stylesheet" href="styles.css" />
    </head>
    <body class="container">
       <header>
          <section id="author">
             <label for="authorCheck" id="authorHead">
-               <img src="images/me.png" alt="Author image failed to load" />
+               <img src="images/me.webp" alt="Author image failed to load" />
                <span>Author</span>
             </label>
             <input type="checkbox" id="authorCheck" style="display: none" />
             <div id="authorBody">
                <div id="authorSelf">
-                  <img src="images/me.png" alt="me img failed to load" />
+                  <img src="images/me.webp" alt="me img failed to load" />
                   <div>
                      <h3>Wahid Sharifi</h3>
                      <span>FULL-STACK WEB DEV</span>
                      <a
-                        href="https://wahidahsharifi.github.io/portfolio/"
+                        href="https://wahidsharifi.vercel.app"
                         id="mail"
-                        >my personal website</a
+                        >MY PORTFOIO</a
                      >
                   </div>
                </div>
@@ -60,7 +61,7 @@
                <div id="authorFriends">
                   <span>friends in tech</span>
                   <div id="alyas">
-                     <h4>alyas sharifi</h4>
+                     <h4>Elyas Sharifi</h4>
                      <p>learning <strong>full-stack</strong> web dev</p>
                      <ul id="authorLinks">
                         <li>
@@ -87,7 +88,7 @@
                      </ul>
                   </div>
                   <div id="salaam">
-                     <h4>salaam azimi</h4>
+                     <h4>Salaam Azimi</h4>
                      <p>learning <strong>front-end</strong> development</p>
                      <ul id="authorLinks">
                         <li>
@@ -104,7 +105,7 @@
                            /></a>
                         </li>
                         <li>
-                           <a href="https://twitter.com/salaam_azimi"
+                           <a href="https://github.com/AbdulSalaamazimi"
                               ><img
                                  src="images/GitHub.png"
                                  alt="GitHub"
@@ -170,368 +171,334 @@
             <div id="clearMan" class="clear">CLEAR RESULT</div>
          </div>
 
-         <details>
-            <summary>Divisibility rules</summary>
-            <article id="rules">
-               <section id="starter">
-                  <h2 class="DBY">Definition</h2>
-                  <p class="DP">
-                     Divisibility rules are some shortcuts to find if an integer
-                     is divisible by a number without actually doing the whole
-                     division process. These rules can help us determine the
-                     prime factorization relatively fast or in simplifying
-                     fractions.
-                  </p>
-                  <p class="EX">
-                     For example, let’s suppose a boy has 531 chocolates, and he
-                     has to distribute them among his 9 friends. Dividing 531 by
-                     9, we get no remainder, which means 531 is perfectly
-                     divisible by 9. If that boy knows divisibility rules he can
-                     easily tell whether or not he can divide the chocolates
-                     equally. Let’s check all important divisibility rules.
-                  </p>
-               </section>
-               <section id="one">
-                  <h2 class="DBY">1</h2>
-                  <p class="DP">
-                     Every number is divisible by 1. Divisibility rule for 1
-                     doesn’t have any condition. Any number divided by 1 will
-                     give the number itself, irrespective of how large the
-                     number is. For example, 3 is divisible by 1 and 3000 is
-                     also divisible by 1 completely.
-                  </p>
-               </section>
-               <section id="two">
-                  <h2 class="DBY">2</h2>
-                  <p class="DP">
-                     If a number is even or a number whose last digit is an even
-                     number i.e. 2,4,6,8 including 0, it is always completely
-                     divisible by 2.
-                  </p>
-                  <ol class="example">
-                     <li>Consider the number 508</li>
-                     <li>Just take the last digit 8 and divide it by 2</li>
-                     <li>
-                        If the last digit 8 is divisible by 2 then the number
-                        508 is also divisible by 2.
-                     </li>
-                  </ol>
-                  <p class="EX">
-                     Example: 508 is an even number and is divisible by 2 but
-                     509 is not an even number, hence it is not divisible by 2.
-                     Procedure to check whether 508 is divisible by 2 or not is
-                     as follows:
-                  </p>
-               </section>
-               <section id="three">
-                  <h2 class="DBY">3</h2>
-                  <p class="DP">
-                     Divisibility rule for 3 states that a number is completely
-                     divisible by 3 if the sum of its digits is divisible by 3.
-                  </p>
-                  <p class="EX">
-                     Consider a number, 308. To check whether 308 is divisible
-                     by 3 or not, take sum of the digits (i.e. 3+0+8= 11). Now
-                     check whether the sum is divisible by 3 or not. If the sum
-                     is a multiple of 3, then the original number is also
-                     divisible by 3. Here, since 11 is not divisible by 3, 308
-                     is also not divisible by 3.
-                  </p>
-                  <p class="EX">
-                     Similarly, 516 is divisible by 3 completely as the sum of
-                     its digits i.e. 5+1+6=12, is a multiple of 3.
-                  </p>
-               </section>
-               <section id="four">
-                  <h2 class="DBY">4</h2>
-                  <p class="DP">
-                     If the last two digits of a number are divisible by 4, then
-                     that number is a multiple of 4 and is divisible by 4
-                     completely.
-                  </p>
-                  <p class="EX">
-                     Take the number 2308. Consider the last two digits i.e. 08.
-                     As 08 is divisible by 4, the original number 2308 is also
-                     divisible by 4.
-                  </p>
-               </section>
-               <section id="five">
-                  <h2 class="DBY">5</h2>
-                  <p class="DP">
-                     Numbers, which last with digits, 0 or 5 are always
-                     divisible by 5.
-                  </p>
-                  <p class="EX">
-                     Example: 10, 10000, 10000005, 595, 396524850, etc.
-                  </p>
-               </section>
-               <section id="six">
-                  <h2 class="DBY">6</h2>
-                  <p class="DP">
-                     Numbers which are divisible by both 2 and 3 are divisible
-                     by 6. That is, if the last digit of the given number is
-                     even and the sum of its digits is a multiple of 3, then the
-                     given number is also a multiple of 6.
-                  </p>
-                  <p class="EX">
-                     Example: 630, the number is divisible by 2 as the last
-                     digit is 0. The sum of digits is 6+3+0 = 9, which is also
-                     divisible by 3. Hence, 630 is divisible by 6.
-                  </p>
-               </section>
-               <section id="seven">
-                  <h2 class="DBY">7</h2>
-                  <p class="DP">
-                     The rule for divisibility by 7 is a bit complicated which
-                     can be understood by the steps given below:
-                  </p>
-                  <ol id="steps">
-                     <li>Remove the past digit of the number and double it</li>
-                     <li>then Subtract from remaining number</li>
-                  </ol>
-                  <ul class="EX">
-                     <p>Example: Is 1073 divisible by 7?</p>
-                     <li>
-                        From the rule stated remove 3 from the number and double
-                        it, which becomes 6.
-                     </li>
-                     <li>Remaining number becomes 107, so 107-6 = 101.</li>
-                     <li>
-                        Repeating the process one more time, we have 1 x 2 = 2.
-                     </li>
-                     <li>Remaining number 10 – 2 = 8.</li>
-                     <li>
-                        As 8 is not divisible by 7, hence the number 1073 is not
-                        divisible by 7.
-                     </li>
-                  </ul>
-               </section>
-               <section id="eight">
-                  <h2 class="DBY">8</h2>
-                  <p class="DP">
-                     If the last three digits of a number are divisible by 8,
-                     then the number is completely divisible by 8.
-                  </p>
-                  <p class="EX">
-                     Example: Take number 24344. Consider the last two digits
-                     i.e. 344. As 344 is divisible by 8, the original number
-                     24344 is also divisible by 8.
-                  </p>
-               </section>
-               <section id="nine">
-                  <h2 class="DBY">9</h2>
-                  <p class="DP">
-                     The rule for divisibility by 9 is similar to divisibility
-                     rule for 3. That is, if the sum of digits of the number is
-                     divisible by 9, then the number itself is divisible by 9.
-                  </p>
-                  <p class="EX">
-                     Example: Consider 78532, as the sum of its digits
-                     (7+8+5+3+2) is 25, which is not divisible by 9, hence 78532
-                     is not divisible by 9.
-                  </p>
-               </section>
-               <section id="ten">
-                  <h2 class="DBY">10</h2>
-                  <p class="DP">
-                     Divisibility rule for 10 states that any number whose last
-                     digit is 0, is divisible by 10.
-                  </p>
-                  <p class="EX">Example: 10, 20, 30, 1000, 5000, 60000, etc.</p>
-               </section>
-               <section id="eleven">
-                  <h2>11</h2>
+         <article id="rules">
+            <section id="starter">
+               <h2 class="DBY">Definition</h2>
+               <p class="DP">
+                  Divisibility rules are some shortcuts to find if an integer is
+                  divisible by a number without actually doing the whole
+                  division process. These rules can help us determine the prime
+                  factorization relatively fast or in simplifying fractions.
+               </p>
+               <p class="EX">
+                  For example, let’s suppose a boy has 531 chocolates, and he
+                  has to distribute them among his 9 friends. Dividing 531 by 9,
+                  we get no remainder, which means 531 is perfectly divisible by
+                  9. If that boy knows divisibility rules he can easily tell
+                  whether or not he can divide the chocolates equally. Let’s
+                  check all important divisibility rules.
+               </p>
+            </section>
+            <section id="one">
+               <h2 class="DBY">1</h2>
+               <p class="DP">
+                  Every number is divisible by 1. Divisibility rule for 1
+                  doesn’t have any condition. Any number divided by 1 will give
+                  the number itself, irrespective of how large the number is.
+                  For example, 3 is divisible by 1 and 3000 is also divisible by
+                  1 completely.
+               </p>
+            </section>
+            <section id="two">
+               <h2 class="DBY">2</h2>
+               <p class="DP">
+                  If a number is even or a number whose last digit is an even
+                  number i.e. 2,4,6,8 including 0, it is always completely
+                  divisible by 2.
+               </p>
+               <ol class="example">
+                  <li>Consider the number 508</li>
+                  <li>Just take the last digit 8 and divide it by 2</li>
+                  <li>
+                     If the last digit 8 is divisible by 2 then the number 508
+                     is also divisible by 2.
+                  </li>
+               </ol>
+               <p class="EX">
+                  Example: 508 is an even number and is divisible by 2 but 509
+                  is not an even number, hence it is not divisible by 2.
+                  Procedure to check whether 508 is divisible by 2 or not is as
+                  follows:
+               </p>
+            </section>
+            <section id="three">
+               <h2 class="DBY">3</h2>
+               <p class="DP">
+                  Divisibility rule for 3 states that a number is completely
+                  divisible by 3 if the sum of its digits is divisible by 3.
+               </p>
+               <p class="EX">
+                  Consider a number, 308. To check whether 308 is divisible by 3
+                  or not, take sum of the digits (i.e. 3+0+8= 11). Now check
+                  whether the sum is divisible by 3 or not. If the sum is a
+                  multiple of 3, then the original number is also divisible by
+                  3. Here, since 11 is not divisible by 3, 308 is also not
+                  divisible by 3.
+               </p>
+               <p class="EX">
+                  Similarly, 516 is divisible by 3 completely as the sum of its
+                  digits i.e. 5+1+6=12, is a multiple of 3.
+               </p>
+            </section>
+            <section id="four">
+               <h2 class="DBY">4</h2>
+               <p class="DP">
+                  If the last two digits of a number are divisible by 4, then
+                  that number is a multiple of 4 and is divisible by 4
+                  completely.
+               </p>
+               <p class="EX">
+                  Take the number 2308. Consider the last two digits i.e. 08. As
+                  08 is divisible by 4, the original number 2308 is also
+                  divisible by 4.
+               </p>
+            </section>
+            <section id="five">
+               <h2 class="DBY">5</h2>
+               <p class="DP">
+                  Numbers, which last with digits, 0 or 5 are always divisible
+                  by 5.
+               </p>
+               <p class="EX">
+                  Example: 10, 10000, 10000005, 595, 396524850, etc.
+               </p>
+            </section>
+            <section id="six">
+               <h2 class="DBY">6</h2>
+               <p class="DP">
+                  Numbers which are divisible by both 2 and 3 are divisible by
+                  6. That is, if the last digit of the given number is even and
+                  the sum of its digits is a multiple of 3, then the given
+                  number is also a multiple of 6.
+               </p>
+               <p class="EX">
+                  Example: 630, the number is divisible by 2 as the last digit
+                  is 0. The sum of digits is 6+3+0 = 9, which is also divisible
+                  by 3. Hence, 630 is divisible by 6.
+               </p>
+            </section>
+            <section id="seven">
+               <h2 class="DBY">7</h2>
+               <p class="DP">
+                  The rule for divisibility by 7 is a bit complicated which can
+                  be understood by the steps given below:
+               </p>
+               <ol id="steps">
+                  <li>Remove the past digit of the number and double it</li>
+                  <li>then Subtract from remaining number</li>
+               </ol>
+               <ul class="EX">
+                  <p>Example: Is 1073 divisible by 7?</p>
+                  <li>
+                     From the rule stated remove 3 from the number and double
+                     it, which becomes 6.
+                  </li>
+                  <li>Remaining number becomes 107, so 107-6 = 101.</li>
+                  <li>
+                     Repeating the process one more time, we have 1 x 2 = 2.
+                  </li>
+                  <li>Remaining number 10 – 2 = 8.</li>
+                  <li>
+                     As 8 is not divisible by 7, hence the number 1073 is not
+                     divisible by 7.
+                  </li>
+               </ul>
+            </section>
+            <section id="eight">
+               <h2 class="DBY">8</h2>
+               <p class="DP">
+                  If the last three digits of a number are divisible by 8, then
+                  the number is completely divisible by 8.
+               </p>
+               <p class="EX">
+                  Example: Take number 24344. Consider the last two digits i.e.
+                  344. As 344 is divisible by 8, the original number 24344 is
+                  also divisible by 8.
+               </p>
+            </section>
+            <section id="nine">
+               <h2 class="DBY">9</h2>
+               <p class="DP">
+                  The rule for divisibility by 9 is similar to divisibility rule
+                  for 3. That is, if the sum of digits of the number is
+                  divisible by 9, then the number itself is divisible by 9.
+               </p>
+               <p class="EX">
+                  Example: Consider 78532, as the sum of its digits (7+8+5+3+2)
+                  is 25, which is not divisible by 9, hence 78532 is not
+                  divisible by 9.
+               </p>
+            </section>
+            <section id="ten">
+               <h2 class="DBY">10</h2>
+               <p class="DP">
+                  Divisibility rule for 10 states that any number whose last
+                  digit is 0, is divisible by 10.
+               </p>
+               <p class="EX">Example: 10, 20, 30, 1000, 5000, 60000, etc.</p>
+            </section>
+            <section id="eleven">
+               <h2>11</h2>
+               <p>
+                  To check the divisibility rule for 11, if the difference of
+                  the sum of alternative digits of a number is divisible by 11,
+                  then that number is divisible by 11 completely.
+               </p>
+               <div class="EX">
                   <p>
-                     To check the divisibility rule for 11, if the difference of
-                     the sum of alternative digits of a number is divisible by
-                     11, then that number is divisible by 11 completely.
+                     Let us consider a number to test the divisibility with 11,
+                     264482240 mark the even place values and odd place values.
+                     Sum up the digits in even place values together and sum up
+                     the digits in odd place values together.
                   </p>
-                  <div class="EX">
-                     <p>
-                        Let us consider a number to test the divisibility with
-                        11, 264482240 mark the even place values and odd place
-                        values. Sum up the digits in even place values together
-                        and sum up the digits in odd place values together.
-                     </p>
-                     <p class="sub">
-                        2<sub>1</sub>6<sub>2</sub>4<sub>3</sub>4<sub>4</sub>8<sub>5</sub>2<sub>6</sub>2<sub>7</sub>4<sub>8</sub>0<sub
-                           >9</sub
-                        >
-                     </p>
-                     <p>
-                        Now sum up the digits in even place values i.e., 0<sup
-                           >th</sup
-                        >
-                        + 2<sup>th</sup> + 4<sup>th</sup> + 6<sup>th</sup> +
-                        8<sup>th</sup> = 2 + 4 + 8 + 2 + 0 = 14. To add up the
-                        digits in odd place values i.e., 1<sup>th</sup> + 3<sup
-                           >th</sup
-                        >
-                        + 5<sup>th</sup> + 7<sup>th</sup> = 6 + 4 + 2 + 4 = 14
-                     </p>
-                     <p>
-                        Now calculate the difference between the sum of digits
-                        in even place values and the sum of digits in odd place
-                        values if the difference is divisible by 11 the complete
-                        number i.e., 264482240 is divisible by 11. Here the
-                        difference is 0, (14-14) which is divisible by 11.
-                        Therefore, 264482240 is divisible by 11.
-                     </p>
-                  </div>
-               </section>
-               <section id="twelve">
-                  <h2>12</h2>
-                  <p>
-                     For any number to be divisible by 12, it must be divisible
-                     by 3 as well as 4 simultaneously. So, the divisibility rule
-                     of 3 and 4 is used together to check whether a number is
-                     divisible by 12 or not.
+                  <p class="sub">
+                     2<sub>1</sub>6<sub>2</sub>4<sub>3</sub>4<sub>4</sub>8<sub>5</sub>2<sub>6</sub>2<sub>7</sub>4<sub>8</sub>0<sub
+                        >9</sub
+                     >
                   </p>
                   <p>
-                     For example, let’s check whether 3276 is divisible by 12 or
-                     not.
-                  </p>
-                  <div class="EX">
-                     <p>
-                        Divisibility by 3, 3 + 2 + 7 + 6 = 18, which is
-                        divisible by 3.
-                     </p>
-                     <p>Thus 3276 is divisible by 3.</p>
-                     <p>
-                        As 76 is the last two digits of 3276, and 76 is
-                        divisible by 4 (76 = 4×19).
-                     </p>
-                     <p>Thus, 3276 is divisible by 4 as well.</p>
-                     <p>
-                        As 3276 is divisible by 3 and 4 simultaneously, thus
-                        3276 is divisible by 12 as well.
-                     </p>
-                  </div>
-                  <p class="note">
-                     Note: For all the composite numbers such as 14, 16, 18, 20,
-                     etc., we can check their divisibility using the
-                     divisibility rule of their constituents factors.
-                  </p>
-               </section>
-               <section id="thirteen">
-                  <h2>13</h2>
-                  <p>
-                     To check, if a number is divisible by 13, add 4 times the
-                     last digit to the rest of the number and repeat this
-                     process until the number becomes two digits. If the result
-                     is divisible by 13, then the original number is divisible
-                     by 13.
-                  </p>
-                  <ol>
-                     <li>
-                        Take the last digit of the number and multiply it by 4.
-                     </li>
-                     <li>Add the result to the remaining digits</li>
-                     <li>If the number is 0 or 2 digits number</li>
-                     <li>check if is divisible by 13</li>
-                  </ol>
-                  <p class="note">
-                     Example: Check whether 333957 is divisible by 13 or not.
-                  </p>
-                  <div class="EX">
-                     <p>Unit digit of 333957 is 7,</p>
-                     <p>(4 × 7) + 33395 = 33423</p>
-                     <p>(4 × 3) + 3342 = 3354</p>
-                     <p>(4 × 4) + 335 = 351</p>
-                     <p>(1 × 4) + 35 = 39</p>
-                     <p>(1 × 4) + 35 = 39</p>
-                     <p>Reduced to two-digit number 39 is divisible by 13.</p>
-                     <p class="note">Therefore, 33957 is divisible by 13.</p>
-                  </div>
-               </section>
-               <section id="seventeen">
-                  <h2>17</h2>
-                  <p>
-                     A number is divisible by 17, when dividing it by 17 there
-                     is no remainder left. To check, if a number is divisible by
-                     17, subtract 5 times the last digit from the rest of the
-                     number and repeat this process until the number becomes two
-                     digits.
+                     Now sum up the digits in even place values i.e., 0<sup
+                        >th</sup
+                     >
+                     + 2<sup>th</sup> + 4<sup>th</sup> + 6<sup>th</sup> + 8<sup
+                        >th</sup
+                     >
+                     = 2 + 4 + 8 + 2 + 0 = 14. To add up the digits in odd place
+                     values i.e., 1<sup>th</sup> + 3<sup>th</sup> + 5<sup
+                        >th</sup
+                     >
+                     + 7<sup>th</sup> = 6 + 4 + 2 + 4 = 14
                   </p>
                   <p>
-                     If the result is divisible by 17, then the original number
-                     is also divisible by 17.
+                     Now calculate the difference between the sum of digits in
+                     even place values and the sum of digits in odd place values
+                     if the difference is divisible by 11 the complete number
+                     i.e., 264482240 is divisible by 11. Here the difference is
+                     0, (14-14) which is divisible by 11. Therefore, 264482240
+                     is divisible by 11.
                   </p>
-                  <ol>
-                     <li>
-                        Take the last digit of the number and multiple it by 5
-                     </li>
-                     <li>Subtract the result to the remaining digits.</li>
-                     <li>if the number is 0 or 2 digit number?</li>
-                     <li>now easily do the math in your brain</li>
-                  </ol>
-                  <p class="note">Example: Is 28730 divisible by 17 or not?</p>
-                  <div class="EX">
-                     <p>Unit digit of 28730 is 0,</p>
-                     <p>2873 – (5 × 0) = 2873</p>
-                     <p>287 – (5 × 3) = 272</p>
-                     <p>27 – (5 × 2) = 17</p>
-                     <p>Reduced to two-digit number 17 is divisible by 17.</p>
-                     <p class="note">Therefore, 28730 is divisible by 17.</p>
-                  </div>
-               </section>
-               <section id="nineteen">
-                  <h2>19</h2>
+               </div>
+            </section>
+            <section id="twelve">
+               <h2>12</h2>
+               <p>
+                  For any number to be divisible by 12, it must be divisible by
+                  3 as well as 4 simultaneously. So, the divisibility rule of 3
+                  and 4 is used together to check whether a number is divisible
+                  by 12 or not.
+               </p>
+               <p>
+                  For example, let’s check whether 3276 is divisible by 12 or
+                  not.
+               </p>
+               <div class="EX">
                   <p>
-                     To check, if a number is divisible by 19, take its unit
-                     digit and multiply it by 2, then add the result to the rest
-                     of the number, and repeat this step until the number is
-                     reduced to two digits.
+                     Divisibility by 3, 3 + 2 + 7 + 6 = 18, which is divisible
+                     by 3.
                   </p>
+                  <p>Thus 3276 is divisible by 3.</p>
                   <p>
-                     If the result is divisible by 19, then the original number
-                     is also divisible by 19. Otherwise, the original number is
-                     not divisible by 19.
+                     As 76 is the last two digits of 3276, and 76 is divisible
+                     by 4 (76 = 4×19).
                   </p>
-                  <p class="note">Example: Is 12635 divisible by 19 or not?</p>
-                  <div class="EX">
-                     <p>Unit digit of 12635 is 5,</p>
-                     <p>1263 + (2× 5) = 1273</p>
-                     <p>127 + (2 × 3) = 133</p>
-                     <p>13 + (2 × 3) = 19</p>
-                     <p>Reduced to two-digit number 19 is divisible by 19.</p>
-                     <p class="note">Therefore, 12635 is divisible by 19.</p>
-                  </div>
-               </section>
-            </article>
-         </details>
+                  <p>Thus, 3276 is divisible by 4 as well.</p>
+                  <p>
+                     As 3276 is divisible by 3 and 4 simultaneously, thus 3276
+                     is divisible by 12 as well.
+                  </p>
+               </div>
+               <p class="note">
+                  Note: For all the composite numbers such as 14, 16, 18, 20,
+                  etc., we can check their divisibility using the divisibility
+                  rule of their constituents factors.
+               </p>
+            </section>
+            <section id="thirteen">
+               <h2>13</h2>
+               <p>
+                  To check, if a number is divisible by 13, add 4 times the last
+                  digit to the rest of the number and repeat this process until
+                  the number becomes two digits. If the result is divisible by
+                  13, then the original number is divisible by 13.
+               </p>
+               <ol>
+                  <li>
+                     Take the last digit of the number and multiply it by 4.
+                  </li>
+                  <li>Add the result to the remaining digits</li>
+                  <li>If the number is 0 or 2 digits number</li>
+                  <li>check if is divisible by 13</li>
+               </ol>
+               <p class="note">
+                  Example: Check whether 333957 is divisible by 13 or not.
+               </p>
+               <div class="EX">
+                  <p>Unit digit of 333957 is 7,</p>
+                  <p>(4 × 7) + 33395 = 33423</p>
+                  <p>(4 × 3) + 3342 = 3354</p>
+                  <p>(4 × 4) + 335 = 351</p>
+                  <p>(1 × 4) + 35 = 39</p>
+                  <p>(1 × 4) + 35 = 39</p>
+                  <p>Reduced to two-digit number 39 is divisible by 13.</p>
+                  <p class="note">Therefore, 33957 is divisible by 13.</p>
+               </div>
+            </section>
+            <section id="seventeen">
+               <h2>17</h2>
+               <p>
+                  A number is divisible by 17, when dividing it by 17 there is
+                  no remainder left. To check, if a number is divisible by 17,
+                  subtract 5 times the last digit from the rest of the number
+                  and repeat this process until the number becomes two digits.
+               </p>
+               <p>
+                  If the result is divisible by 17, then the original number is
+                  also divisible by 17.
+               </p>
+               <ol>
+                  <li>
+                     Take the last digit of the number and multiple it by 5
+                  </li>
+                  <li>Subtract the result to the remaining digits.</li>
+                  <li>if the number is 0 or 2 digit number?</li>
+                  <li>now easily do the math in your brain</li>
+               </ol>
+               <p class="note">Example: Is 28730 divisible by 17 or not?</p>
+               <div class="EX">
+                  <p>Unit digit of 28730 is 0,</p>
+                  <p>2873 – (5 × 0) = 2873</p>
+                  <p>287 – (5 × 3) = 272</p>
+                  <p>27 – (5 × 2) = 17</p>
+                  <p>Reduced to two-digit number 17 is divisible by 17.</p>
+                  <p class="note">Therefore, 28730 is divisible by 17.</p>
+               </div>
+            </section>
+            <section id="nineteen">
+               <h2>19</h2>
+               <p>
+                  To check, if a number is divisible by 19, take its unit digit
+                  and multiply it by 2, then add the result to the rest of the
+                  number, and repeat this step until the number is reduced to
+                  two digits.
+               </p>
+               <p>
+                  If the result is divisible by 19, then the original number is
+                  also divisible by 19. Otherwise, the original number is not
+                  divisible by 19.
+               </p>
+               <p class="note">Example: Is 12635 divisible by 19 or not?</p>
+               <div class="EX">
+                  <p>Unit digit of 12635 is 5,</p>
+                  <p>1263 + (2× 5) = 1273</p>
+                  <p>127 + (2 × 3) = 133</p>
+                  <p>13 + (2 × 3) = 19</p>
+                  <p>Reduced to two-digit number 19 is divisible by 19.</p>
+                  <p class="note">Therefore, 12635 is divisible by 19.</p>
+               </div>
+            </section>
+         </article>
       </main>
       <footer>
-         <input type="checkbox" id="sideCheck" />
-         <section>
-            <div id="sider">
-               <div id="linkContainer">
-                  <a href="#">top</a>
-                  <a href="#divide">auto test</a>
-                  <a href="#divideMan">manual test</a>
-                  <details>
-                     <summary>rules</summary>
-                     <a href="#starter">Definition</a>
-                     <a href="#one">1</a>
-                     <a href="#two">2</a>
-                     <a href="#three">3</a>
-                     <a href="#four">4</a>
-                     <a href="#five">5</a>
-                     <a href="#six">6</a>
-                     <a href="#seven">7</a>
-                     <a href="#eight">8</a>
-                     <a href="#nine">9</a>
-                     <a href="#ten">10</a>
-                     <a href="#twelve">11</a>
-                     <a href="#thirteen">12</a>
-                     <a href="#fourteen">13</a>
-                     <a href="#seventeen">17</a>
-                     <a href="#nineteen">19</a>
-                  </details>
-               </div>
-            </div>
-            <label for="sideCheck" id="sideLabel"><div>></div></label>
-         </section>
          <script src="main.js"></script>
       </footer>
    </body>

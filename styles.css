@@ -23,8 +23,6 @@ body {
 }
 main,
 header {
-   position: relative;
-   left: 120px;
    max-width: 700px;
    margin: 0 auto;
 }
@@ -37,11 +35,6 @@ hr {
    background-color: var(--text-color);
    width: 90%;
    margin: 0;
-}
-summary {
-   font-size: 25px;
-   background: var(--side-text);
-   padding: 10px 20px;
 }
 /* header */
 header,
@@ -172,11 +165,11 @@ header,
    align-items: center;
 }
 #mail {
-   text-decoration: none;
+   text-decoration: underline 1px red;
    font-size: 14px !important;
    color: #00f !important;
    &:hover {
-      text-decoration: underline 1px red;
+      text-decoration: none;
    }
 }
 #themeList {
@@ -321,60 +314,6 @@ header,
 .note {
    font-weight: bold;
 }
-/* sider */
-#sider,
-#linkContainer {
-   display: flex;
-   flex-direction: column;
-}
-footer > input {
-   display: none;
-}
-#sideLabel {
-   display: none;
-   position: fixed;
-   font-size: 30px;
-   margin: 10px auto;
-   line-height: 50px;
-   width: 50px;
-   background-color: var(--side-label) !important;
-   color: var(--text-color);
-   z-index: 5;
-   left: 0;
-   top: 80%;
-}
-#sider {
-   display: block;
-   position: fixed;
-   background: var(--side-background);
-   height: 100%;
-   width: 170px;
-   left: 0;
-   top: 0;
-   overflow-y: auto;
-   justify-content: space-between;
-   align-items: center;
-   z-index: 2;
-   transition: all 0.5s ease;
-}
-#sider a,
-#sideLabel {
-   user-select: none;
-   background: var(--side-text);
-   text-align: center;
-   &:hover {
-      cursor: pointer;
-      background-color: #00a6ed !important;
-   }
-}
-#sider a {
-   margin: 5px 10px;
-   font-size: 20px;
-   padding: 5px;
-   border-radius: 5px;
-   text-decoration: none;
-   display: block;
-}
 /* setting default theme*/
 @media screen and (prefers-color-scheme: dark) {
    :root {
@@ -398,24 +337,7 @@ footer > input {
    }
 }
 @media screen and (max-width: 1000px) {
-   #sideLabel {
-      display: block;
-      border-radius: 0 10px 10px 0;
-   }
-   main,
-   header {
-      left: auto;
-   }
-   #sider {
-      left: -171px;
-   }
    label {
       transition: all 0.5s ease;
-   }
-   #sideCheck:checked + section > label > div {
-      transform: rotateY(180deg);
-   }
-   #sideCheck:checked + section > div {
-      left: 0;
    }
 }

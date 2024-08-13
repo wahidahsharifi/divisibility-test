@@ -109,8 +109,8 @@ function manualMan() {
          document.createTextNode(`the input number is not greater than one!`)
       );
    } else if (numberMan % divisibleBy == 0) {
-      li.appendChild(document.createTextNode(`YES`));
+      li.appendChild(document.createTextNode(`${numberMan} % ${divisibleBy} = YES`));
    } else {
-      li.appendChild(document.createTextNode(`NO`));
+      li.appendChild(document.createTextNode(`${numberMan} % ${divisibleBy} = NO`));
    }
 }
